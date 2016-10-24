@@ -6,7 +6,7 @@ body{
 	font-weight: 400;
 }
 .btn {
-  font-size: 18px;
+  font-size: 16px;
   text-transform: uppercase;
   border: 3px double transparent;
   border-radius: 0;
@@ -21,7 +21,7 @@ body{
   border: 2px solid #ff8f00;
   background-color: #ff8f00;
   border-radius:2px;
-  padding:12px 12px 12px 12px;
+  padding:10px 10px 10px 10px;
 }
 .btn-empty:hover {
   color: #fff;
@@ -41,19 +41,19 @@ body{
   margin: 0;
   border: 0;
 	font-family: 'Open Sans', sans-serif;
-	padding:30px 20px;
+	padding:23px 13px;
 }
 #topnav .container-fluid{
 	margin:0;
 }
 #topnav .navbar-nav > li > a {
- font-size:18px;
+ font-size:16px;
 font-weight: 400;
   color: #fff;
   text-transform: uppercase;
-  padding:17px 20px;
+  padding:12px 13px;
   transition: all .3s ease;
-  line-height: 20px;
+  line-height: 15px;
   letter-spacing: 0.1em;
 	background-color: transparent;
   
@@ -75,7 +75,7 @@ font-weight: 400;
 }
  #nav{
  	position:relative;
- 	right:100px;
+ 	right:70px;
 	float:right;
 }
 #topnav .navbar-nav > li.active > a {
@@ -122,7 +122,7 @@ opacity:1;
 }
 .banner h1{
   font-family: 'Roboto',sans-serif;
- font-size: 80px;
+ font-size: 65px;
   margin: 0;
     color: #fff;
  letter-spacing: 0.05em;
@@ -132,7 +132,7 @@ opacity:1;
   color:#FF8F00;
 }
 .banner p {
-  font-size: 24px;
+  font-size: 16px;
   margin: 15px 0;
   color: #fff;
   margin-bottom:20px;
@@ -141,5 +141,5 @@ opacity:1;
   transition:all 2s ease;
 }
 .fa-long-arrow-right{
-	padding-left:10px;
+	padding-left:8px;
 }
