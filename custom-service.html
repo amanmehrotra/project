@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Custom-Service</title>
+	<link rel="stylesheet" href="">
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+	<script src="app4.js"></script>
+</head>
+<body ng-app="CustomServiceApp">
+	<h1>Shopping Cart App</h1>
+	<div ng-controller="CartAddController as addcart">
+	<input type="text" name="item" placeholder="Enter item name" ng-model="addcart.itemname">
+	<input type="text" name="quantity" placeholder="Enter quantity" ng-model="addcart.quantity">
+	<button ng-click="addcart.addItem()">Add to Cart</button>
+	</div>
+	<h2>Items List</h2>
+	<div ng-controller="ShowListController as showlist">
+	<ol>
+		<li ng-repeat="item in showlist.items">
+		{{item.quantity}} of {{item.itemname}}.
+		<button ng-click="showlist.removeItem($index)">Remove Item</button>
+		</li>
+	</ol>
+	</div>
+
+</body>
+</html>

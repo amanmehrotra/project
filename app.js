@@ -1,10 +1,23 @@
 angular.module('my-app',[]).
-	controller('mycontroller',function($scope,$filter){
+	controller('mycontroller',mycontroller)
+	.filter('custom',customFilterFactory)
+	.filter('textChange',textChangeFactory);
+	mycontroller.$inject=['$scope','$filter','customFilter'];
+	function mycontroller($scope,$filter,customFilter){
 		$scope.message="wassup how r u";
 
-		$scope.showMessage=function(num){
-			return num+10;
-		}
+			//$scope.msg='how are you doing?';
+		 
+		    	//$scope.msg=customFilter($scope.msg);
+		  $scope.message=function(){
+		  	var msg="My name is Aman Mehrotra!!!";
+		  	return msg;
+		  }  	
+		 $scope.changeMsg=function(){
+		 	var msg="My name is Aman Mehrotra!!!";
+		 	msg=customFilter(msg);
+		 	return msg;
+		 }   
 
 		$scope.value="aman";
 		$scope.namevalue="";
@@ -18,9 +31,24 @@ angular.module('my-app',[]).
 
 			$scope.totvalue=sum;
 		}
+
 		$scope.val="aman";
 		$scope.upper=function(){
 			var upcase=$filter('uppercase');
 			$scope.val=upcase($scope.val);
 		}
-	});
+	};
+	function customFilterFactory(){
+		return function(input){
+			
+			input=input.replace('Aman','Utsav');
+			return input;
+		}
+	}
+	function textChangeFactory(){
+		return function(input,target,replace){
+			input =input || "";
+			input=input.replace(target,replace);
+			return input;
+		}
+	}

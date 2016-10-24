@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html ng-app="ng_repeat_app">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title></title>
+	<link rel="stylesheet" href="">
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+	<script src="app3.js"></script>
+	<style type="text/css" media="screen">
+		ul{
+			list-style: none;
+		}
+		h1{
+			text-decoration: underline;
+		}
+	</style>
+</head>
+<body ng-controller="ngrepeatController">
+	<!--<p>{{name}}</p>-->
+	<!--List displaying the shopping items
+	<h1>Shopping List</h1>
+	<ul>
+		<li ng-repeat="item in shoppingList">
+			{{$index+1}}: Buy quantity {{item.quantity}} of {{item.name}}(s).
+		</li>
+	</ul>
+	<input type="text" name="itemname" value="" placeholder="Enter item name" ng-model="itemname">
+	<input type="number" min="0" name="quantity" value="" placeholder="Enter quantity" ng-model="quantity">
+	<button ng-click="addItem()">Add item</button>
+	<input type="text" name="" ng-model="shoppingList[3].quantity">
+	-->
+	<h1>Employee Details</h1>
+	<input type="text" name="searchbox" value="" placeholder="search using name or phone number" ng-model="search">
+	<ul>
+		<li ng-repeat="detail in details|filter:searchfunc">
+			 {{$index+1}}:- name: {{detail.name}} , email: {{detail.email}} , phoneno: {{detail.phone}}
+		</li>
+	</ul>
+</body>
+</html>

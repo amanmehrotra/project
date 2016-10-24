@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title></title>
+	<link rel="stylesheet" href="">
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+	<script src="app5.js" type="text/javascript"></script>
+	<style type="text/css" media="screen">
+		#list1,#list2{
+			float:left;
+		}
+		#list1{
+			margin-right:50px;
+		}
+		/*#list2{
+			margin-left:40px;
+		}*/
+	</style>
+</head>
+<body ng-app="my-app">
+	<h1>Factory Service Examples</h1>
+	<div id="list1" ng-controller="shoppingList1Controller as list1">
+		<h3>Shopping List 1</h3>
+		<input type="text" name="name" value="" placeholder="Enter name" ng-model="list1.name">
+		<input type="text" name="" value="" placeholder="Enter quantity" ng-model="list1.quantity">
+		<button ng-click="list1.addItem()">Add item</button>
+		<h4>Shopping list 1:</h4>
+		<ol>
+			<li ng-repeat="item in list1.items">
+				Buy {{item.quantity}} of {{item.name}}	
+				<button ng-click="list1.removeItem($index)">Remove item</button>
+			</li>
+		</ol>
+	</div>
+	<div id="list2" ng-controller="shoppingList2Controller as list2">
+		<h3>Shopping List 2(Max 3 items)</h3>
+		<input type="text" value="" placeholder="Enter name" ng-model="list2.name">
+		<input type="text" value="" placeholder="Enter quantity" ng-model="list2.quantity">
+		<button ng-click="list2.addItem()">Add item</button>
+		<h4>Shopping list 2:</h4>
+		<ol>
+			<li ng-repeat="item in list2.items">
+				Buy {{item.quantity}} of {{item.name}}	
+				<button ng-click="list2.removeItem($index)">Remove item</button>
+			</li>
+		</ol>
+		Error:{{list2.message}}
+	</div>
+</body>
+</html>

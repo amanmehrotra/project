@@ -1,0 +1,145 @@
+html,body{
+	height:100%;
+}
+body{
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+}
+.btn {
+  font-size: 18px;
+  text-transform: uppercase;
+  border: 3px double transparent;
+  border-radius: 0;
+}
+.btn:focus,
+.btn:active:focus {
+  outline: none;
+  color:#fff;
+}
+.btn-empty {
+  color: #fff;
+  border: 2px solid #ff8f00;
+  background-color: #ff8f00;
+  border-radius:2px;
+  padding:12px 12px 12px 12px;
+}
+.btn-empty:hover {
+  color: #fff;
+  background-color: transparent;
+  border: 2px solid #FF7200;
+  border-radius:2px;
+  transition: all 0.5s ease-in-out 0s;
+}
+/* ------------------------------------------------------------- */
+/* Start Navigation Section */
+/* ------------------------------------------------------------- */
+
+#topnav {
+
+      background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+  transition: all .3s ease;
+  margin: 0;
+  border: 0;
+	font-family: 'Open Sans', sans-serif;
+	padding:30px 20px;
+}
+#topnav .container-fluid{
+	margin:0;
+}
+#topnav .navbar-nav > li > a {
+ font-size:18px;
+font-weight: 400;
+  color: #fff;
+  text-transform: uppercase;
+  padding:17px 20px;
+  transition: all .3s ease;
+  line-height: 20px;
+  letter-spacing: 0.1em;
+	background-color: transparent;
+  
+ 
+}
+#home{
+	background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+	height:100%;
+	width:100%;
+	position: absolute;
+}
+.banner {
+  height: 100%;
+  background-color: rgba(0,0,0,0.8);
+  position: relative;
+  opacity:0.9;
+}
+ #nav{
+ 	position:relative;
+ 	right:100px;
+	float:right;
+}
+#topnav .navbar-nav > li.active > a {
+  
+ color:#FF8F00;
+  
+ 
+  transition: all .3s ease;
+  
+ 
+}
+#topnav .navbar-nav > li > a:hover {
+ 
+ color:#FF8F00;
+ transition: all .3s ease;
+ font-weight: 400;
+}
+#topnav .navbar-nav > li.open > a {
+  background-color: none;
+}
+#logo{
+	z-index:0!important;
+}
+#logo > a {
+	font-size:43px;
+	margin-left:60px;
+padding: 0;
+color: #fff;
+ font-family: 'Roboto', sans-serif;
+  line-height: 60px;
+ letter-spacing: 0.05em;
+ font-weight: 700;
+}
+
+#logo >a > span{
+color:#FF7200;
+opacity:1;
+}
+.banner > .container{
+ top:40%;
+ position: relative;
+ text-align: center;
+ z-index:14;
+}
+.banner h1{
+  font-family: 'Roboto',sans-serif;
+ font-size: 80px;
+  margin: 0;
+    color: #fff;
+ letter-spacing: 0.05em;
+ font-weight: 700;
+}
+.banner h1 >span{
+  color:#FF8F00;
+}
+.banner p {
+  font-size: 24px;
+  margin: 15px 0;
+  color: #fff;
+  margin-bottom:20px;
+  font-family: 'Open Sans Condensed', sans-serif;
+  letter-spacing: 0.1em;
+  transition:all 2s ease;
+}
+.fa-long-arrow-right{
+	padding-left:10px;
+}
