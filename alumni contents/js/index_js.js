@@ -17,7 +17,7 @@
       animation: 'kenburns'  ,
       walk: function (index, slideSettings) {
       	  
-      	 var text=["Computer Science and Application <br>Department of Computer Science,BHU","Lorem doler ipsum amet","Lorem doler ipsum amet<br> lorem doler ipsum amet","Lorem doler ipsum amet<br> lorem doler ipsum amet<br>lorem doler ipsum amet"];
+      	 var text=["Computer Science and Application <br>Department of Computer Science,BHU","Lorem doler ipsum amet<br>Lorem doloer ipsum amet","Lorem doler ipsum amet<br> r u kidding me","Lorem doler ipsum amet<br> u r a prefect moron","lorem doler ipsum amet<br>whatsup bro."];
       	 if(index==text.length)
       	 	index=0;
 
