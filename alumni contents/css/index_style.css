@@ -240,7 +240,7 @@ border:none;
   position: relative;
 }
 #device {
-  margin:20px 0 20px 70px;
+  margin:20px auto;
   width: 315px;
   height: 565px;
   position:relative;
