@@ -11,7 +11,8 @@
        
         
         { src: "img/Varanasi.jpg"},
-        { src: "img/IMG_2352.jpg"}
+        { src: "new_img/pic2.jpg"},
+        { src: "new_img/pic7.jpg"}
          
     ],
       animation: 'kenburns'  ,

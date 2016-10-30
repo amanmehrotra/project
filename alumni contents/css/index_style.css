@@ -83,8 +83,8 @@ font-family: 'Open Sans', sans-serif;
 }
 #topnav.scrolled{
 
-  background-color: rgba(0,0,0,0.8);
-  transition: all .3s ease;
+  background-color: rgba(0,0,0,0.9);
+  transition: all .3s ease-in;
   min-height: 30px;
   margin: 0;
   border: 0;
@@ -159,7 +159,7 @@ color: #fff;
 }
 
 #logo >a > span{
-color:#FF7200;
+color:#FF8F00;
 opacity:1;
 }
 .banner > .container{
@@ -229,4 +229,172 @@ border:none;
 #aboutus .col-md-3:hover{
   transition: all 0.5s ease;
    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+/* ------------------------------------------------------------- */
+/* Start News/Events Section */
+/* ------------------------------------------------------------- */
+
+#news_events{
+  width: 100%;
+  position: relative;
+}
+#device {
+  margin:20px 0 20px 70px;
+  width: 315px;
+  height: 565px;
+  position:relative;
+  background-color: #fff;
+  border: 1.5rem solid #111;
+  border-bottom-width: 8rem;
+  border-top-width: 8rem;
+  border-top-left-radius: 60px 50px;
+  border-top-right-radius: 60px 50px;
+  border-bottom-left-radius: 60px 50px;
+  border-bottom-right-radius: 60px 50px;  
+   /* box-shadow: 14px 14px 10px rgba(0,0,0,0.25), 14 10px 10px rgba(0,0,0,0.22);*/
+   box-shadow:10px 10px 30px #707070;
+    } 
+  #device-signal:before, #device-signal:after {
+    content: '';
+    position: absolute;
+    width: 45%;
+    height: 10px;
+    top: -5.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    background: transparent;
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+
+  }
+  #device-camera{
+    content: '';
+    position: absolute;
+    width: 3.5%;
+    height:2.5%;
+    border-radius:50%;
+    top: -5.4rem;
+    right:15%;
+    background:rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+      }
+  #device-signal:after {
+    width: 50%;
+    top: calc(100% + 4.5rem);
+  }
+#news_events .section-title hr{
+ background:#ff8f00 none repeat scroll 0% 0%;
+top:-15px;
+width:198px;
+left:-57px;
+height:1px;
+position:relative;
+border:none;
+}
+
+#news_events .section-title hr::after{
+  content: "";
+background:#2F383D none repeat scroll 0% 0%;
+width:198px;
+height:1px;
+position:absolute;
+left:118px;
+top:10px;
+border:none;
+}
+#news-heading{
+  display:flex;
+  background-color: #e68100;
+  flex-wrap:nowrap;
+  padding-top:6px;
+  padding-bottom:4px;
+  color:#fff;
+  z-index:100;
+}
+#news-heading i{
+  margin:8px 25px 0px 13px;
+}
+#news-heading span{
+  margin-right:20px;
+  font-family: 'Open Sans',sans-serif;
+  font-weight: 400;
+ margin-top:5px;
+}
+#news-heading ul{
+  list-style: none;
+  display: inline-flex;
+margin-top:3px;
+float:right;
+}
+#news-heading ul li > i{
+    margin:8px 5px 0px 25px;
+    padding-right:0;
+}
+#main_news{
+  height:22.5vh;
+  background:url(../new_img/pic1.jpg);
+  background-size: cover;
+  background-position: center;
+    position:relative;
+
+}
+#main_news #overlay{
+  position: relative;
+  background: linear-gradient(
+    to bottom,
+      rgba(0, 0, 0, 0),
+      rgba(0, 0, 0, 0.9));
+  height: 22.5vh;
+}
+
+#main_news p{
+  z-index:1;
+  color: #fff;
+  position:absolute;
+  bottom:2px;
+  font-family: 'Roboto',sans-serif;
+  font-weight:400;
+  padding-left:15px;
+  letter-spacing: 0.1em;
+  line-height: 1.2em;
+}
+#secondary_news{
+  position:relative;
+  
+}
+#secondary_news table{
+  width:100%;
+  list-style: none;
+  overflow: hidden;
+}
+#secondary_news table tr{
+  display: flex;
+  width:100%;
+  padding:10px;
+  border-bottom:1px solid #A0A0A0;
+}
+#secondary_news table tr:last-child{
+ 
+  border-bottom:none;
+}
+#secondary_news table tr td{
+  padding-left:10px;
+}
+#secondary_news table tr td > .side-image-1{
+  background:url(../new_img/modi_news.jpg);
+  background-size: cover;
+  background-position: center;
+  width:5vw;
+  height:10vh;
+}
+#secondary_news table tr td p{
+  font-family: 'Roboto',sans-serif;
+  font-weight:bold;
+  line-height:1.2em;
+  font-size:13px;
+  color:#000;
+}
+#secondary_news table tr td i{
+ color: #606060;
 }
