@@ -386,7 +386,8 @@ float:right;
   background-size: cover;
   background-position: center;
   width:5vw;
-  height:10vh;
+  height:9vmin;
+  
 }
 #secondary_news table tr td p{
   font-family: 'Roboto',sans-serif;
