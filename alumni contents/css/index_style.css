@@ -117,7 +117,7 @@ font-weight: 400;
 }
 .banner {
   height: 100%;
-  background-color: rgba(0,0,0,0.8);
+  background: rgba(0,0,0,0.8);
   position: relative;
   opacity:0.8;
 }
@@ -226,10 +226,7 @@ border:none;
  /* border:1px solid #e3e3e3;*/
   border-radius:5px;
 }
-#aboutus .col-md-3:hover{
-  transition: all 0.5s ease;
-   box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
-}
+
 
 /* ------------------------------------------------------------- */
 /* Start News/Events Section */
@@ -238,9 +235,14 @@ border:none;
 #news_events{
   width: 100%;
   position: relative;
+  background: #e4e4e4;
+}
+.news_events_main{
+  display: flex;
+  flex-wrap: nowrap;
 }
 #device {
-  margin:20px auto;
+  margin:20px 30px;
   width: 315px;
   height: 565px;
   position:relative;
@@ -255,6 +257,7 @@ border:none;
    /* box-shadow: 14px 14px 10px rgba(0,0,0,0.25), 14 10px 10px rgba(0,0,0,0.22);*/
    box-shadow:10px 10px 30px #707070;
     } 
+
   #device-signal:before, #device-signal:after {
     content: '';
     position: absolute;
@@ -337,7 +340,14 @@ float:right;
   background-size: cover;
   background-position: center;
     position:relative;
+     transition: all 0.3s linear;
 
+}
+#main_news:hover{
+  
+  cursor:pointer;
+  transition: all 0.3s linear;
+opacity:0.5;
 }
 #main_news #overlay{
   position: relative;
@@ -361,21 +371,29 @@ float:right;
 }
 #secondary_news{
   position:relative;
-  
+  /*height:calc(100% - 17.5rem);*/
+  height:37.5vmax;
 }
 #secondary_news table{
-  width:100%;
-  list-style: none;
-  overflow: hidden;
+  
+ position: absolute;
+ width:100%;
+  height:calc(100% + 0.7rem);
 }
 #secondary_news table tr{
   display: flex;
   width:100%;
-  padding:10px;
+  padding:9.2px;
   border-bottom:1px solid #A0A0A0;
+   transition: all 0.3s linear;
+}
+#secondary_news table tr:hover{
+  background:#A0A0A0;
+  cursor:pointer;
+  transition: all 0.3s linear;
 }
 #secondary_news table tr:last-child{
- 
+
   border-bottom:none;
 }
 #secondary_news table tr td{
