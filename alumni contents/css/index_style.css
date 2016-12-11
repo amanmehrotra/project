@@ -238,8 +238,7 @@ border:none;
   background: #e4e4e4;
 }
 .news_events_main{
-  display: flex;
-  flex-wrap: nowrap;
+  
 }
 #device {
   margin:20px 30px;
@@ -256,6 +255,7 @@ border:none;
   border-bottom-right-radius: 60px 50px;  
    /* box-shadow: 14px 14px 10px rgba(0,0,0,0.25), 14 10px 10px rgba(0,0,0,0.22);*/
    box-shadow:10px 10px 30px #707070;
+   float: left;
     } 
 
   #device-signal:before, #device-signal:after {
@@ -372,13 +372,14 @@ opacity:0.5;
 #secondary_news{
   position:relative;
   /*height:calc(100% - 17.5rem);*/
-  height:37.5vmax;
+  /*height:37.5vmax;*/
+  width:100%;
 }
 #secondary_news table{
   
- position: absolute;
+ position: relative;
  width:100%;
-  height:calc(100% + 0.7rem);
+  /*height:calc(100% + 0.7rem);*/
 }
 #secondary_news table tr{
   display: flex;
@@ -417,3 +418,123 @@ opacity:0.5;
 #secondary_news table tr td i{
  color: #606060;
 }
+#timeline{
+  
+    margin-top: 30px;
+    margin-left:69%;
+
+}
+#timeline ul{
+     list-style: none;
+    padding: 20px 0 20px;
+    position: relative;
+   
+
+}
+#timeline ul::before{
+    top: 0;
+    bottom: 50px;
+    position: absolute;
+    content: " ";
+    width: 1px;
+    background-color:#A8A8A8;
+    left: 0;
+    margin-left: -1.5px;
+}
+#timeline ul li{
+      margin-bottom: 20px;
+    position: relative;
+    display:inline-block;
+}
+#timeline ul  li > .timeline_image{
+     background-image: url(https://cdnify.leaf.co.in/images/testimonial/profile-2.jpg);
+    color: #fff;
+    width: 45px;
+    height: 45px;
+        background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 16px;
+    margin-left: -25px;
+    background-size: contain;
+    border-radius: 50%;
+    border:2px solid #e68100;
+}
+#timeline ul li div.timeline_text{
+  width:300px;
+  padding:10px;
+  border-radius: 2px;
+  border:1px solid #d4d4d4;
+  position: relative;
+  bottom:20px;
+  left:38px;
+  font-size: 14px;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-weight:300;
+  letter-spacing: 0.06em;
+  -webkit-box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
+}
+#timeline ul li div.timeline_text p{
+  font-size: 14px;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-weight:700;
+  letter-spacing: 0.04em;
+}
+#timeline ul li .created_date{
+  left:-105px;
+  position:relative;
+  top:30px;
+  color:#e68100;
+  font-style:'Roboto',sans-serif;
+  font-weight:400;
+}
+#timeline ul li:nth-child(even) .created_date{
+  left:28px;
+  position:relative;
+  top:28px;
+  color:#e68100;
+}
+
+#timeline ul li:nth-child(even) div.timeline_text{
+  font-size: 12px;
+  width:300px;
+  padding:10px;
+  border-radius: 2px;
+  border:1px solid #d4d4d4;
+  position: relative;
+ bottom:20px;
+ left:-341px;
+ font-size:14px;
+ font-family: 'Open Sans Condensed', sans-serif;
+  font-weight:300;
+  letter-spacing: 0.06em;
+ -webkit-box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
+    box-shadow: 0 1px 6px rgba(0, 7 0, 0.175);
+}
+
+#timeline ul li div.timeline_text::before {
+  
+    position: absolute;
+    top: 24px;
+    display: inline-block;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    content: " ";
+  
+}
+#timeline ul li:nth-child(odd) div.timeline_text::before {
+    left: -15px;
+    display: inline-block;
+    border-left: 0px solid #ccc;
+    border-right: 15px solid #ccc;
+}
+
+#timeline ul li:nth-child(even) div.timeline_text::before {
+    right: -15px;
+    border-top: 15px solid transparent;
+    border-left: 15px solid #ccc;
+    border-right: 0 solid #ccc;
+    border-bottom: 15px solid transparent;
+    content: " ";
+  }
