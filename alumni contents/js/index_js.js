@@ -41,6 +41,20 @@ $(document).ready(function(){
   	 	$('#logo').addClass('hide');
 }
   }).trigger('scroll');
+
+
+  $('#search input').focus(function() {
+    $('#search .input-group-addon').css({
+      'border-bottom': '2px solid #cf7d14',
+      'transition': 'all 0.3s ease-in'
+    });
+}).blur(function() {
+    $('#search .input-group-addon').css({
+      'border-bottom': '2px solid #989898',
+      'transition': 'all 0.3s ease-in'
+    });
+});
+  
 });
 
 /* Navigation bar scrolling */
