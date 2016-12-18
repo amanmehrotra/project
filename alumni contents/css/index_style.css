@@ -752,7 +752,6 @@ opacity:0.5;
   bottom:40px;
   color:#fff;
   margin:0 auto;
- 
  width:100%;
 }
 div.search_div .over_lay_text{
@@ -767,6 +766,8 @@ div.search_div .over_lay_text{
   font-weight: 300;
   z-index:200;
   letter-spacing: 0.05em;
+  padding-left:10px;
+  padding-right:10px;
   display:none;
 }
 @-webkit-keyframes slideInUp {
