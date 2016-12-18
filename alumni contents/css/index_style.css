@@ -382,7 +382,7 @@ float:right;
   
   cursor:pointer;
   transition: all 0.3s linear;
-
+  opacity:0.5;
 }
 #main_news #overlay{
   position: relative;
