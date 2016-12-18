@@ -708,13 +708,13 @@ opacity:0.5;
   position: relative;
   height: 220px;
   width: 220px;
-  text-align:center;
   margin: 0 auto;
   z-index: 100;
   border-radius: 50%;
   overflow: hidden;
   display: flex;
   justify-content: center;
+  
 }
 #search div.search_div img{
   width:100%;
@@ -753,23 +753,32 @@ opacity:0.5;
   color:#fff;
   margin:0 auto;
  width:100%;
+ text-align: center;
 }
+
 div.search_div .over_lay_text{
-   margin:0 auto;
-   width:100%;
-   color:#fff;
-  line-height: 100%;
-  position: absolute;
-  align-self: center;
-  font-size: 14px;
-  font-family: 'Open Sans Condensed',sans-serif;
-  font-weight: 300;
-  z-index:200;
-  letter-spacing: 0.05em;
-  padding-left:10px;
-  padding-right:10px;
-  display:none;
+    margin: 0 auto;
+    width: 100%;
+    color: #fff;
+    line-height: 100%;
+    position: absolute;
+    align-self: center;
+    font-size: 14px;
+    font-family: 'Open Sans Condensed',sans-serif;
+    font-weight: 300;
+    z-index: 200;
+    letter-spacing: 0.05em;
+    padding-left: 10px;
+    padding-right: 10px;
+    display: none;
+    word-wrap:break-word;
+    text-align: center;
 }
+
+ span{
+   font-weight:bold;
+   
+  }
 @-webkit-keyframes slideInUp {
   from {
     -webkit-transform: translate3d(0, 100%, 0);
