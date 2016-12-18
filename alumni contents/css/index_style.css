@@ -369,7 +369,8 @@ float:right;
     padding-right:0;
 }
 #main_news{
-  height:22.5vh;
+  
+  height:118px;
   background:url(../new_img/pic1.jpg);
   background-size: cover;
   background-position: center;
@@ -381,7 +382,7 @@ float:right;
   
   cursor:pointer;
   transition: all 0.3s linear;
-opacity:0.5;
+
 }
 #main_news #overlay{
   position: relative;
@@ -389,7 +390,7 @@ opacity:0.5;
     to bottom,
       rgba(0, 0, 0, 0),
       rgba(0, 0, 0, 0.9));
-  height: 22.5vh;
+  height: 118px;
 }
 
 #main_news p{
@@ -407,17 +408,18 @@ opacity:0.5;
   position:relative;
   /*height:calc(100% - 17.5rem);*/
   /*height:37.5vmax;*/
-  width:100%;
+  width:285px;
 }
 #secondary_news table{
   
  position: relative;
- width:100%;
+ width:285px;
   /*height:calc(100% + 0.7rem);*/
 }
 #secondary_news table tr{
+  
   display: flex;
-  width:100%;
+  flex-wrap: nowrap;
   padding:9.2px;
   border-bottom:1px solid #A0A0A0;
    transition: all 0.3s linear;
@@ -438,8 +440,8 @@ opacity:0.5;
   background:url(../new_img/modi_news.jpg);
   background-size: cover;
   background-position: center;
-  width:5vw;
-  height:9vmin;
+  width:60px;
+  height:61px;
   
 }
 #secondary_news table tr td p{
@@ -455,7 +457,7 @@ opacity:0.5;
 #timeline{
   
     margin-top: 30px;
-    margin-left:69%;
+    margin-left:75%;
 
 }
 #timeline ul{
@@ -496,7 +498,7 @@ opacity:0.5;
     border:2px solid #e68100;
 }
 #timeline ul li div.timeline_text{
-  width:300px;
+  width:200px;
   padding:10px;
   border-radius: 2px;
   border:1px solid #d4d4d4;
@@ -533,13 +535,13 @@ opacity:0.5;
 
 #timeline ul li:nth-child(even) div.timeline_text{
   font-size: 12px;
-  width:300px;
+  width:200px;
   padding:10px;
   border-radius: 2px;
   border:1px solid #d4d4d4;
   position: relative;
  bottom:20px;
- left:-341px;
+ left:-238px;
  font-size:14px;
  font-family: 'Open Sans Condensed', sans-serif;
   font-weight:300;
@@ -775,10 +777,7 @@ div.search_div .over_lay_text{
     text-align: center;
 }
 
- span{
-   font-weight:bold;
-   
-  }
+ 
 @-webkit-keyframes slideInUp {
   from {
     -webkit-transform: translate3d(0, 100%, 0);
