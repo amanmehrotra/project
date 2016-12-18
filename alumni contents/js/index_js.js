@@ -54,6 +54,23 @@ $(document).ready(function(){
       'transition': 'all 0.3s ease-in'
     });
 });
+
+$('#search div.search_div').hover(function(e){
+       //var class=$(this).className('display_name');
+       var cl=$(this).find('p.display_name');
+       $(cl).fadeOut(200);
+       var cl2=$(this).find('div.over_lay_text');
+       $(cl2).fadeIn(300);
+       e.preventDefault();
+},function(e){
+  var cl2=$(this).find('div.over_lay_text');
+       $(cl2).fadeOut(200);
+  var cl=$(this).find('p.display_name');
+       $(cl).fadeIn(300);
+       
+e.preventDefault();
+}
+);
   
 });
 
