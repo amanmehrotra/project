@@ -48,9 +48,17 @@ $(document).ready(function(){
       'border-bottom': '2px solid #cf7d14',
       'transition': 'all 0.3s ease-in'
     });
+    $('#search .input-group-addon i').css({
+      'color': '#cf7d14',
+      'transition': 'all 0.3s ease-in'
+    });
 }).blur(function() {
     $('#search .input-group-addon').css({
       'border-bottom': '2px solid #989898',
+      'transition': 'all 0.3s ease-in'
+    });
+     $('#search .input-group-addon i').css({
+      'color': '#989898',
       'transition': 'all 0.3s ease-in'
     });
 });
