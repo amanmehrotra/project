@@ -34,8 +34,8 @@ body{
   transition: all 0.5s ease-in-out 0s;
 }
 .padding_tb{
-  padding-top:70px;
-  padding-bottom: 70px;
+  padding-top:80px;
+  padding-bottom: 80px;
 }
 .padding_lr{
   padding-left: 20px;
@@ -44,6 +44,10 @@ body{
 .margin_tb{
   margin-top:30px;
   margin-bottom:30px;
+}
+.min_padding_tb{
+  padding-top: 50px;
+  padding-bottom:50px;
 }
 .section-title {
   text-align: center;
@@ -1071,11 +1075,14 @@ float:left;
     }
   .navbar-toggle{
     display: block;
-   background-color: #FF7200!important;
-    border: 1px solid #FF7200!important;
+   background-color: #ff8f00!important;
+    border: 1px solid #ff8f00!important;
     
   }
-  
+  .margin-right{
+    margin-right:250px;
+    transition:all 0.5s;
+  }
  #navigation{
       height: 100%;
     width: 0;
@@ -1085,7 +1092,7 @@ float:left;
     right: 0;
     background-color: #111;
     overflow-x: hidden;
-    transition: 0.5s;
+    transition:all 0.5s ease;
     padding-top: 50px;
     }
     #navigation.small_width{
@@ -1132,7 +1139,14 @@ font-weight: 400;
 }
 #navigation .navbar-nav > li >a:hover {
   
+  color:rgb(255,143,0);
+  
+}
+#navigation .navbar-nav > li.active >a {
+  
   color:#fff;
   background-color: rgb(255,143,0);
+
+  transition: all .3s ease;
 }
 }

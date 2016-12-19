@@ -88,12 +88,14 @@ e.preventDefault();
     //$('#navigation').addClass('small');
      $("#navigation").removeClass('very_small');
     $("#navigation").addClass('small_width');
-    //$("#home").css('marginRight','250px');
-   // $('body').css('background-color','blue');
+    //$("body").addClass('margin-right');
+    //$('body').css('backgroundColor','rgba(0,0,0,0.6)');
   });
   $('#navigation .closebtn').click(function(){
     $("#navigation").removeClass('small_width');
+     //$("body").removeClass('margin-right');
        $("#navigation").addClass('very_small');
+        $("body").removeClass('margin-right');
   });
 
 
