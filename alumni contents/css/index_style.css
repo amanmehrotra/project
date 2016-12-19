@@ -782,7 +782,210 @@ div.search_div .over_lay_text{
     text-align: center;
 }
 
- 
+/* -------------------------------------------------------------- */
+/* Start Blog Section */
+/* -------------------------------------------------------------- */
+#blog{
+  position:relative;
+  width:100%;
+  background: #e4e4e4;
+}
+.first_blog{
+  background: #fff none repeat scroll 0 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    -webkit-transition: all 0.2s ease 0s;
+    transition: all 0.2s ease 0s;
+}
+.blog_post{
+  position:relative;
+}
+.post_date{
+  position:absolute;
+  top:5%;
+  background: #fff none repeat scroll 0 0;
+  color:#fff;
+  padding:10px 15px 10px 15px;
+  display:inline-block;
+  
+  
+}
+.post_date h4{
+  color:#333;
+  text-transform:uppercase;
+  text-align: center;
+}
+.share{
+  position:absolute;
+  bottom:5%;
+  background: #fff none repeat scroll 0 0;
+  color:#fff;
+  padding:20px;
+  bottom:5%;
+
+}
+.share h4{
+  color:#333;
+  border-bottom: 1px solid #e8e8e9;
+  text-transform:uppercase;
+  text-align: center;
+  padding-bottom:5px;
+  font-weight:700;
+}
+
+.share ul {
+    list-style: outside none none;
+    margin: 0;
+    padding: 0;
+}
+.share ul li {
+    float: left;
+}
+.share ul li a i {
+    color: #fff;
+    font-size: 18px;
+    height: 40px;
+    line-height: 45px;
+    text-align: center;
+    -webkit-transition: all 0.2s ease 0s;
+    transition: all 0.2s ease 0s;
+    width: 40px;
+}
+.facebook {
+    background: #5D82D1;
+}
+.twitter {
+    background: #40BFF5;
+}
+.google {
+    background: #EB5E4C;
+}
+.linkedin {
+    background: #238CC8;
+}
+.blog_desc{
+  padding:20px;
+}
+.blog_desc h3 {
+    color: #333;
+    display: block;
+    font-size: 20px;
+    margin: 0;
+    padding-bottom: 15px;
+    text-transform: uppercase;
+    -webkit-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s;
+}
+.blog_desc p {
+    text-align: justify;
+    margin-bottom: 10px;
+}
+
+.blog_desc a {
+    color: rgb(255,143,0);
+    font-weight: 400;
+    -webkit-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+.first_blog:hover{
+  box-shadow: 0px 3px 25px rgba(0, 0, 0, 0.3);
+    -webkit-transition: all 0.2s ease 0s;
+    transition: all 0.2s ease 0s;
+}
+
+.view_more {
+    margin-top: 50px;
+}
+.text-center {
+    text-align: center;
+}
+.btn-light-bg {
+   background: rgb(255,143,0) none repeat scroll 0 0;
+    border: 2px solid rgb(255,143,0);
+    border-radius: 3px;
+    box-shadow: 0 8px 25px 0 rgba(0, 0, 0, 0.1);
+    color: #fff;
+    font-family: montserrat,sans-serif;
+    font-size: 12px;
+    padding: 8px 20px;
+    text-transform: uppercase;
+    -webkit-transition: all 0.2s ease 0s;
+    transition: all 0.2s ease 0s;
+}
+ .btn-light-bg:hover{
+  background:#cf7d14;
+   border: 2px solid #cf7d14;
+  text-decoration:none;
+  transition: all 0.2s ease 0s;
+  color:#fff;
+ }
+ .discussion_forums{
+  background: #fff none repeat scroll 0 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    -webkit-transition: all 0.2s ease 0s;
+    transition: all 0.2s ease 0s;
+    margin-top:60px;
+}
+.disc_heading h4{
+  padding:20px;
+  font-size:30px;
+
+}
+.disc_topics{
+  margin-top:-24px;
+}
+.internal_head i{
+  font-size:15px;
+}
+.internal_head .heading{
+  font-size:20px;
+  padding-left:15px;
+
+  margin-bottom:20px;
+  color:#333;
+  font-weight:400;
+}
+.disc_heading hr{
+  width: 120px;
+height: 3px;
+background:rgb(255,143,0) none repeat scroll 0% 0%;
+border: medium none;
+position: relative;
+margin-top:-20px;
+margin-left:25px;
+float:left;
+}
+
+.discussion_forums ul {
+    list-style: outside none none;
+    margin: 0;
+    padding: 20px;
+}
+.discussion_forums ul li{
+    border-bottom:1px solid #e8e8e9;
+    padding-top:10px;
+    padding-bottom:10px;
+}
+
+.discussion_forums ul li:last-of-type{
+    border-bottom:none;
+    padding-top:10px;
+    padding-bottom:0px;
+}
+.discussion_forums ul li p {
+    text-align: justify;
+    margin-top:5px;
+    margin-bottom: 5px;
+}
+.discussion_forums ul li i {
+    color:rgb(255,143,0);
+    padding:0 5px 0 5px;
+    }
+  .discussion_forums ul li span {
+    color:#829199;
+    
+    }
 @-webkit-keyframes slideInUp {
   from {
     -webkit-transform: translate3d(0, 100%, 0);
