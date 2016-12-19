@@ -24,7 +24,7 @@ body{
   border: 2px solid #ff8f00;
   background-color: #ff8f00;
   border-radius:2px;
-  padding:8px 8px 8px 8px;
+  padding:10px 10px 10px 10px;
 }
 .btn-empty:hover {
   color: #fff;
@@ -141,13 +141,14 @@ font-weight: 400;
   
  
 }
+
 #home{
-	background-size: cover;
+  background-size: cover;
     background-attachment: fixed;
     background-position: center;
-	  height:100%;
-	width:100%;
-	position: relative;
+    height:100%;
+  width:100%;
+  position: relative;
 }
 .banner {
   height: 100%;
@@ -156,9 +157,10 @@ font-weight: 400;
   opacity:0.8;
 }
  #nav{
- 	position:relative;
- 	right:70px;
-	float:right;
+  position:relative;
+  right:70px;
+  float:right;
+  margin-right:-80px;
 }
 #topnav .navbar-nav > li.active > a {
   
@@ -179,11 +181,11 @@ font-weight: 400;
   background-color: none;
 }
 #logo{
-	z-index:0!important;
+  z-index:0!important;
 }
 #logo > a {
-	font-size:20px;
-	margin-left:40px;
+  font-size:20px;
+  margin-left:40px;
 padding: 0;
 color: #fff;
  font-family: 'Roboto', sans-serif;
@@ -204,7 +206,7 @@ opacity:1;
 }
 .banner h1{
   font-family: 'Roboto',sans-serif;
- font-size: 65px;
+ font-size: 72px;
   margin: 0;
     color: #fff;
  letter-spacing: 0.06em;
@@ -214,7 +216,7 @@ opacity:1;
   color:#FF8F00;
 }
 .banner p {
-  font-size: 18px;
+  font-size: 21px;
   margin: 13px 0;
   color: #fff;
   margin-bottom:20px;
@@ -226,12 +228,15 @@ opacity:1;
 	padding-left:6px;
 }
 
+#navigation .closebtn {
+  display:none;
+}
 /* ------------------------------------------------------------- */
 /* Start About Us Section */
 /* ------------------------------------------------------------- */
 #aboutus{
- position:relative;
- width: 100%;
+ background: #ffffff;
+ 
  
 }
 /*#aboutus .section-title hr{
@@ -267,8 +272,7 @@ border:none;
 /* ------------------------------------------------------------- */
 
 #news_events{
-  width: 100%;
-  position: relative;
+
   background: #e4e4e4;
 }
 .news_events_main{
@@ -650,8 +654,7 @@ float:right;
 
 
 #search{
-  width: 100%;
-  position: relative;
+ 
   background: #f0efef;
 }
 
@@ -786,8 +789,7 @@ div.search_div .over_lay_text{
 /* Start Blog Section */
 /* -------------------------------------------------------------- */
 #blog{
-  position:relative;
-  width:100%;
+  
   background: #e4e4e4;
 }
 .first_blog{
@@ -920,12 +922,16 @@ div.search_div .over_lay_text{
   transition: all 0.2s ease 0s;
   color:#fff;
  }
+ #forum{
+  background:#f0efef;
+ }
  .discussion_forums{
   background: #fff none repeat scroll 0 0;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     -webkit-transition: all 0.2s ease 0s;
     transition: all 0.2s ease 0s;
-    margin-top:60px;
+    margin-top:30px;
+    border-radius: 
 }
 .disc_heading h4{
   padding:20px;
@@ -1037,4 +1043,96 @@ float:left;
     transform: translate3d(0, 0, 0);
     visibility: visible;
   }
+}
+
+/*--------------------------------*/
+/*Media Queries*/
+/*--------------------------------*/
+@media screen and (min-width:992px) and (max-width:1124px){
+  #logo > a {
+    margin-left: -5px;
+  }
+  #topnav .navbar-nav > li > a {
+ font-size:13px;
+
+  padding:15px 12px 0px;
+  transition: all .3s ease;
+  line-height: 12px;
+  letter-spacing: 0.1em;
+  background-color: transparent;
+  }
+  #device{
+  margin-left:-2px;
+}
+}
+@media screen and (max-width:991px){
+    .navbar-header {
+        float: none;
+    }
+  .navbar-toggle{
+    display: block;
+   background-color: #FF7200!important;
+    border: 1px solid #FF7200!important;
+    
+  }
+  
+ #navigation{
+      height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    right: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 50px;
+    }
+    #navigation.small_width{
+      width:250px;
+    }
+    #navigation.very_small{
+      width:0;
+    }
+   #navigation .closebtn {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 40px;
+    margin-left: 50px;
+    color:rgb(255,143,0);
+    padding-left:48px;
+    padding-bottom: 48px;
+    text-decoration: none;
+}
+ 
+    .navbar-nav {
+        float: none!important;
+        margin: 7.5px 70px;
+        text-align: center;
+    }
+    .navbar-nav>li {
+        float: none;
+    }
+     .navbar-collapse.collapse {
+        display: none!important;
+    }
+#navigation .navbar-nav > li >a {
+  
+  font-size:13px;
+font-weight: 400;
+  color: #fff;
+  text-transform: uppercase;
+  padding:15px 0px 12px;
+  transition: all .3s ease;
+  line-height: 12px;
+  letter-spacing: 0.1em;
+  background-color: transparent;
+}
+#navigation .navbar-nav > li >a:hover {
+  
+  color:#fff;
+  background-color: rgb(255,143,0);
+}
 }

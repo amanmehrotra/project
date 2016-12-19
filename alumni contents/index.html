@@ -12,6 +12,14 @@
 
    <link rel="stylesheet" type="text/css" href="css/vegas.min.css">
 </head>
+<!-- <script>
+    function openNav(){
+        document.getElementById("navigation").style.width = "250px";
+        }
+         function closeNav(){
+        document.getElementById("navigation").style.width = "0";
+        }
+    </script> -->
 <body>
 
 	<body data-spy="scroll" data-target=".navbar" data-offset="50">
@@ -19,7 +27,7 @@
  <header id="topnav" class="navbar navbar-default navbar-fixed-top">
         <div class="container-fluid">
             <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navigation">
+                <button type="button" class="navbar-toggle" onclick="openNav()">
                     <span class="sr-only">Toggle navigation</span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
@@ -29,16 +37,18 @@
                     <a class="navbar-brand" href="#home">ALUMNI<span> PORTAL</span></a>
                 </div>
             </div>
-            <div class="collapse navbar-collapse" id="navigation">
+            <div class="sidebar-collapse" id="navigation">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
                 <ul class="nav navbar-nav" id="nav">
 				
                     <li><a href="#home">HOME</a></li>
-                    <li><a href="#aboutus">About us</a></li>
-                    <li ><a href="#">News</a></li>
-					 <li><a href="#">Events</a></li>
-					<li ><a href="#">Forum</a></li>
+                    <li><a href="#aboutus">About Us</a></li>
+                    <li ><a href="#">News/Events</a></li>
+					 <li><a href="#">Search</a></li>
+					<li ><a href="#">Blogs</a></li>
+                    <li ><a href="#">Forum</a></li>
 					<li ><a href="#">Register/Login</a></li>
-					<li><a href="#gallery">Photo Gallery</a></li>
+					<li><a href="#gallery">Gallery</a></li>
 					
                     </ul>				
                     
@@ -52,8 +62,8 @@
     <div class="container">
 
     <div class="row">
-    <div class="col-md-3 col-xs-3 col-lg-3 col-sm-3"></div>
-    <div class="col-md-6 col-xs-6 col-lg-6 col-sm-6">
+     
+    <div class="col-md-12 col-xs-12 col-lg-12 col-sm-12">
                 <h1>Alumni <span>Portal</span></h1>
                 <p id="main-text">Computer Science and Applications
                 <br>Department of Computer Science,BHU</p>
@@ -62,9 +72,7 @@
       
                 <a href="#" class="btn btn-empty">Take a Tour <i class="fa fa-long-arrow-right"></i></a>
                 </div>
-                <div class="col-md-3 col-lg-3 col-xs-3 col-sm-3">
-                </div>
-            </div>
+               
     </div>
     </div>
     </section>
@@ -214,7 +222,7 @@
     </div>
     </section>
 
-    <section id="search" class="padding_tb">
+    <section id="search" style="padding-top:70px;padding-bottom:30px">
     <div class="container">
     <div class="row">
     <div class="col-md-12 col-xs-12 col-sm-12">
@@ -226,14 +234,14 @@
     </div>
     </div>
     <div class="row">
-    <div class="col-md-2"></div>
+    <div class="col-md-2 col-sm-2"></div>
     <div class="col-md-8 col-sm-8 col-xs-12 col-lg-8">
     <div class="input-group">
         <input class="form-control" id="input_search" type="search" name="search_alumni" placeholder="Name or Email Id">
         <span class="input-group-addon" id="in"><i class="fa fa-search"></i></span>
     </div>
     </div>
-    <div class="col-md-2"></div>
+    <div class="col-md-2 col-sm-2"></div>
     </div>
    <!--  <div class="row margin_tb">
     <div class="col-md-4 col-sm-6 col-xs-12 padding_tb padding_lr">

@@ -79,9 +79,36 @@ $('#search div.search_div').hover(function(e){
 e.preventDefault();
 }
 );
-  
-});
+  var document_width=$(window).width();
+  $('.navbar-toggle').click(function(){
+   
+    //document.getElementById("navigation").style.width = "250px";
+   // document.getElementById("home").style.marginRight = "250px";
+    //document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+    //$('#navigation').addClass('small');
+     $("#navigation").removeClass('very_small');
+    $("#navigation").addClass('small_width');
+    //$("#home").css('marginRight','250px');
+   // $('body').css('background-color','blue');
+  });
+  $('#navigation .closebtn').click(function(){
+    $("#navigation").removeClass('small_width');
+       $("#navigation").addClass('very_small');
+  });
 
+
+/*else{
+  var new_width=$(window).width();
+  $("#navigation").width(new_width);
+}*/
+$(window).on("resize", function() {
+    if ($(window).width() > 991) {
+     
+      $('#navigation').removeClass('small_width');
+      $('#navigation').removeClass('very_small');
+    }
+  });
+});
 /* Navigation bar scrolling */
   $('#nav a[href=#]').click(function() {
     return false;
