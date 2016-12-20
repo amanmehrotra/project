@@ -995,6 +995,9 @@ float:left;
     color:#829199;
     
     }
+    #news_small{
+      display: none;
+    }
 @-webkit-keyframes slideInUp {
   from {
     -webkit-transform: translate3d(0, 100%, 0);
@@ -1193,5 +1196,132 @@ font-weight: 400;
   }
   #timeline{
     display:none;
+  }
+  #news_small{
+     display:block;
+  }
+  #news_small div.col-sm-4{
+    width:33.3%;
+    display: inline-block;
+    padding-top:10%;
+    padding-bottom: 10%;
+    
+   margin-right:10px;
+   margin-top: 10px;
+    border: 1px solid #d4d4d4;
+-webkit-box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
+    box-shadow: 0 1px 6px rgba(0, 7 0, 0.175);
+    position: relative;
+  }
+   #news_small div.col-sm-4:first-of-type{
+      
+   }
+  #news_small #head1{
+    background: url(../new_img/pic1.jpg);
+      background-size: cover;
+  background-position: center;
+    position:relative;
+  }
+   #news_small #head2{
+    background: url(../new_img/modi_news.jpg);
+
+      background-size: cover;
+  background-position: center;
+    position:relative;
+
+  }
+  #news_small #head3{
+    background: url(../new_img/pic1.jpg);
+
+      background-size: cover;
+  background-position: center;
+    position:relative;
+  }
+  #news_small #head4{
+    background: url(../new_img/modi_news.jpg);
+
+      background-size: cover;
+  background-position: center;
+    position:relative;
+  }
+ #news_small div.col-sm-4 #overlay{
+  position: absolute;
+    background: linear-gradient(
+    to bottom,
+      rgba(0, 0, 0, 0),
+      rgba(0,0,0, 0.9));
+  top:0;
+  width: 100%;
+  left:0;
+  bottom:0;
+  right:0;
+z-index: 1;
+   transition: all 0.3s;
+}
+ #news_small div.col-sm-4 p{
+  z-index:1000;
+  color: #fff;
+  position:absolute;
+  bottom:2px;
+  font-family: 'Open Sans Condensed',sans-serif;
+  font-weight:300;
+   font-size: 1em;
+  letter-spacing: 0.1em;
+  line-height: 1.1em;
+  margin-left:1px;
+}
+  #news_small .right{
+    float:right;
+  }
+}
+
+@media screen and (max-width:639px){
+  #device{
+    display: none;
+  }
+  #timeline{
+    display:none;
+  }
+  #news_small{
+     display:block;
+  }
+  #news_small .row{
+    display: flex;
+  }
+     #news_small div.col-sm-4{
+    width:50%;
+    
+    
+  }
+  #news_small .right{
+    float:left;
+  }
+  #news_small #head1{
+    background: url(../new_img/pic1.jpg);
+      background-size: cover;
+  background-position: 20% 20%;
+    position:relative;
+  }
+   #news_small #head2{
+    background: url(../new_img/modi_news.jpg);
+
+      background-size: cover;
+  background-position: 20% 20%;
+    position:relative;
+
+  }
+  #news_small #head3{
+    background: url(../new_img/pic1.jpg);
+
+      background-size: cover;
+  background-position: 20% 20%;
+    position:relative;
+  }
+  #news_small #head4{
+    background: url(../new_img/modi_news.jpg);
+
+      background-size: cover;
+   background-position: 20% 20%;
+    position:relative;
   }
 }
