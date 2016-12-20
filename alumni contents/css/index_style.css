@@ -283,8 +283,7 @@ border:none;
   
 }
 #device {
-  margin:20px 30px;
-  margin-left:35px;
+  margin:20px 30px 20px 35px;
   width: 315px;
   height: 565px;
   position:relative;
@@ -499,7 +498,7 @@ float:right;
     color: #fff;
     width: 45px;
     height: 45px;
-        background-position: center;
+  background-position: center;
     background-repeat: no-repeat;
     position: absolute;
     top: 16px;
@@ -1052,6 +1051,7 @@ float:left;
 /*--------------------------------*/
 /*Media Queries*/
 /*--------------------------------*/
+
 @media screen and (min-width:992px) and (max-width:1124px){
   #logo > a {
     margin-left: -5px;
@@ -1149,4 +1149,49 @@ font-weight: 400;
 
   transition: all .3s ease;
 }
+
+        
+    
+
+}
+
+@media screen and (min-width:800px) and (max-width:991px){
+    #device{
+  position:relative;
+  margin-top: 50px;
+     left:-65px;
+}
+#timeline ul li:nth-child(even) div.timeline_text{
+   left:38px;
+}
+#timeline ul li:nth-child(even) .created_date{
+  left:-105px;
+    top:30px;
+  
+}
+
+#timeline ul li:nth-child(even) div.timeline_text::before {
+  position: absolute;
+    top: 24px;
+    display: inline-block;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    content: " ";
+    right:200px;
+    display: inline-block;
+    border-left: 0px solid #ccc;
+    border-right: 15px solid #ccc;
+
+  }
+  #timeline{
+    margin-left: 71%;
+  }
+}
+@media screen and (max-width: 799px){
+  #device{
+    display: none;
+  }
+  #timeline{
+    display:none;
+  }
 }
