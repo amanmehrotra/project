@@ -201,7 +201,7 @@ font-weight: 400;
 padding: 0;
 color: #fff;
  font-family: 'Roboto', sans-serif;
-  line-height: 45px;
+  line-height: 47px;
  letter-spacing: 0.05em;
  font-weight: 700;
 }
@@ -1086,9 +1086,16 @@ float:left;
     }
   .navbar-toggle{
     display: block;
-   background-color: #ff8f00!important;
-    border: 1px solid #ff8f00!important;
+   background-color: transparent;
+    border: none;
     
+  }
+ .navbar-default .navbar-toggle:hover{
+    background-color: inherit;
+    border: none;
+  }
+ .navbar-default .navbar-toggle .icon-bar{
+    background:#ff8f00;
   }
   .margin-right{
     margin-right:250px;
