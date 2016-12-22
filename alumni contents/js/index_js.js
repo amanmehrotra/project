@@ -110,13 +110,26 @@ $(window).on("resize", function() {
       $('#navigation').removeClass('very_small');
     }
   });
+
+ var winheight = $(window).height();
+
+$(window).scroll(function() {
+  $(".slideanim").each(function(){
+    var pos = $(this).offset().top;
+
+    var winTop = $(window).scrollTop();
+    if (winTop > (pos-(winheight*.75))) {
+      $(this).addClass("slide");
+    }
+  });
+});
 });
 /* Navigation bar scrolling */
   $('#nav a[href=#]').click(function() {
     return false;
   });
   
-  $('a[href*=#]').click(function() {
+ /* $('a[href*=#]').click(function() {
     if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
       var target = $(this.hash);
       target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
@@ -127,6 +140,29 @@ $(window).on("resize", function() {
         return false;
       }
     }
+  });*/
+
+  $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+
+   // Make sure this.hash has a value before overriding default behavior
+  if (this.hash !== "") {
+
+    // Prevent default anchor click behavior
+    event.preventDefault();
+
+    // Store hash
+    var hash = this.hash;
+
+    // Using jQuery's animate() method to add smooth page scroll
+    // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+    $('html, body').animate({
+      scrollTop: $(hash).offset().top
+    }, 1000, function(){
+
+      // Add hash (#) to URL when done scrolling (default click behavior)
+      window.location.hash = hash;
+      });
+    } // End if
   });
 
 })();
