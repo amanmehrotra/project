@@ -1450,7 +1450,7 @@ btn-empty {
 }
 
 #home{
-  height: 430px!important;
+  height: 100%;
 }
 
 .banner > .container{
@@ -1716,8 +1716,8 @@ left:62px;
     
     animation-name: fadeIn;
     -webkit-animation-name: fadeIn;  
-    animation-duration: 1500ms; 
-    -webkit-animation-duration: 1500ms;
+    animation-duration: 800ms; 
+    -webkit-animation-duration: 800ms;
     visibility: visible; 
 }
 
