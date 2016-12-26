@@ -96,8 +96,13 @@ left:78px;
 top:10px;
 border:none;
 }
-input[type="text"]{
+input[type="text"],[type="mail"],[type="password"]{
   border-radius:25px;
+  background: inherit;
+}
+select.form-control{
+  border-radius: 25px;
+  background: inherit;
 }
 .input-group-addon{
   background: inherit;
@@ -105,6 +110,21 @@ input[type="text"]{
 }
 .input-group-addon i{
   color:#ff8f00;
+}
+button.form-control{
+  margin:15px auto;
+  padding:auto;
+  width:55px;
+  height:55px;
+  border-radius: 50%;
+  background:rgb(255,143,0);
+  color:#fff;
+  text-align: center;
+}
+button.form-control i{
+  font-size: 20px;
+  margin-left: -4px;
+  margin-top: 2px;
 }
 /* ------------------------------------------------------------- */
 /* Start Navigation Section */
@@ -703,26 +723,26 @@ float:right;
 ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
   font-style:'Open Sans Condensed',sans-serif;
   font-weight: 300;
-  font-size: 16px;
-  color:#989898;
+  font-size: 15px;
+  color:#555!important;
 }
 ::-moz-placeholder { /* Firefox 19+ */
   font-style:'Open Sans Condensed',sans-serif;
   font-weight: 300;
-  font-size: 16px;
-  color:#989898;
+  font-size: 15px;
+  color: blue;
 }
 :-ms-input-placeholder { /* IE 10+ */
   font-style:'Open Sans Condensed',sans-serif;
   font-weight: 300;
   font-size: 16px;
-  color:#989898;
+  color:blue;
 }
 :-moz-placeholder { /* Firefox 18- */
   font-style:'Open Sans Condensed',sans-serif;
   font-weight: 300;
   font-size: 16px;
-  color:#989898;
+ color:blue;
 }
 
 #search div.search_div {
@@ -1006,6 +1026,137 @@ float:left;
     #news_small{
       display: none;
     }
+
+/* -------------------------------------------------------------- */
+/* Start signup/login Section */
+/* -------------------------------------------------------------- */
+#signup_login{
+  background:#f5f5f5;
+}
+/*Registration form*/
+
+#reg_form{
+  background:#e4e4e4;
+  width:300px;
+  min-width:100px;
+  border-radius: 10px;
+  border:1px solid #eee;
+  margin:20px auto;
+
+   /* -webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+       -moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+            box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;*/
+  -webkit-box-shadow: 0 10px 6px -6px #777;
+       -moz-box-shadow: 0 10px 6px -6px #777;
+            box-shadow: 0 10px 6px -6px #777;
+  
+ 
+/*  box-shadow: 0 4px 12px 0 rgba(0,0,0,0.2);*/
+}
+#reg_form div.reg_form_head{
+  border-bottom:1px solid #ccc;
+  padding:10px 10px;
+}
+ #register_form{
+ padding-left: 15px;
+  padding-right: 15px;
+ }
+
+
+#reg_form div.reg_form_head span{
+  margin-left:75px;
+  text-transform: uppercase;
+  font-family: 'Roboto',sans-serif;
+  font-weight: 700px;
+}
+#reg_form div.reg_form_head i.fa-circle-o-notch{
+  margin-top:4px;
+}
+.form-control {
+    font-family: 'Open Sans Condensed',sans-serif!important;
+    letter-spacing: 0.01em;
+    font-weight: 300;
+    font-style: italic;
+    background-color: transparent;
+    font-size: 15px;
+        
+
+}
+.form-control:focus{
+ border:1px solid rgb(255,143,0);
+ box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(255, 143,0, 0.2);
+}
+select.form-control{
+  margin-top:17px;
+}
+
+#register_form div.input_group{
+  position: relative;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+#reg_form div.input_group span.input-addon {
+  display: none;
+  color:#fff;
+  width:30px;
+  font-size: 15px;
+ position: absolute;
+ left:16px;
+  top:6px;
+}
+
+/*Login form*/
+
+#log_form{
+  background:#e4e4e4;
+  width:300px;
+  min-width:100px;
+  border-radius: 10px;
+  border:1px solid #eee;
+  margin:20px auto;
+   -webkit-box-shadow: 0 10px 6px -6px #777;
+       -moz-box-shadow: 0 10px 6px -6px #777;
+            box-shadow: 0 10px 6px -6px #777;
+ 
+
+}
+#log_form div.log_form_head{
+  border-bottom:1px solid #ccc;
+  padding:10px 10px;
+}
+ #login_form{
+ padding-left: 15px;
+  padding-right: 15px;
+ }
+
+
+#log_form div.log_form_head span{
+  margin-left:80px;
+  text-transform: uppercase;
+  font-family: 'Roboto',sans-serif;
+  font-weight: 700px;
+}
+#log_form div.log_form_head i.fa-circle-o-notch{
+  margin-top:4px;
+}
+#login_form div.input_group{
+  position: relative;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+#log_form div.input_group span.input-addon {
+  display: none;
+  color:#fff;
+  width:30px;
+  font-size: 15px;
+ position: absolute;
+ left:16px;
+  top:6px;
+}
+button.form-control:hover{
+  background: #cc7200;
+  border:5px solid #ff8f00;
+}
 @-webkit-keyframes slideInUp {
   from {
     -webkit-transform: translate3d(0, 100%, 0);
