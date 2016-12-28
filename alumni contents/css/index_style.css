@@ -1799,6 +1799,26 @@ margin:0 auto;
   #news_small #head4{
     display: none;
   }
+
+  .post_date h5{
+  color:#333;
+  text-transform:uppercase;
+  text-align: center;
+  font-size:10px;
+}
+.share h5{
+  font-size:10px;
+}
+.share ul li a i {
+    color: #fff;
+    font-size: 10px;
+    height: 25px;
+    line-height: 25px;
+    text-align: center;
+    -webkit-transition: all 0.2s ease 0s;
+    transition: all 0.2s ease 0s;
+    width: 25px;
+}
 }
 
 @media screen and (max-width:364px){
