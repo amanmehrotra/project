@@ -5,6 +5,10 @@ body{
 	font-family: 'Open Sans', sans-serif;
 	font-weight: 300;
 }
+*{
+  box-sizing: border-box;
+  -webkit-box-sizing:border-box;
+}
 /* ------------------------------------------------------------- */
 /* General styles */
 /* ------------------------------------------------------------- */
@@ -828,6 +832,7 @@ div.search_div .over_lay_text{
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     -webkit-transition: all 0.2s ease 0s;
     transition: all 0.2s ease 0s;
+    margin-bottom: 20px;
 }
 .blog_post{
   position:relative;
@@ -837,12 +842,12 @@ div.search_div .over_lay_text{
   top:5%;
   background: #fff none repeat scroll 0 0;
   color:#fff;
-  padding:10px 15px 10px 15px;
+  padding:8px 13px 8px 13px;
   display:inline-block;
   
   
 }
-.post_date h4{
+.post_date h5{
   color:#333;
   text-transform:uppercase;
   text-align: center;
@@ -852,11 +857,11 @@ div.search_div .over_lay_text{
   bottom:5%;
   background: #fff none repeat scroll 0 0;
   color:#fff;
-  padding:20px;
+  padding:10px;
   bottom:5%;
 
 }
-.share h4{
+.share h5{
   color:#333;
   border-bottom: 1px solid #e8e8e9;
   text-transform:uppercase;
@@ -875,13 +880,13 @@ div.search_div .over_lay_text{
 }
 .share ul li a i {
     color: #fff;
-    font-size: 18px;
-    height: 40px;
-    line-height: 45px;
+    font-size: 15px;
+    height: 35px;
+    line-height: 35px;
     text-align: center;
     -webkit-transition: all 0.2s ease 0s;
     transition: all 0.2s ease 0s;
-    width: 40px;
+    width: 35px;
 }
 .facebook {
     background: #5D82D1;
@@ -1920,4 +1925,58 @@ left:62px;
   to {
     opacity: 1;
   }
+}
+
+
+
+
+
+
+
+
+/*---------------------------*/
+/*Profile Creation Page*/
+/*---------------------------*/
+#profile_creation{
+  margin:20px auto;
+  
+}
+#progress{
+  counter-reset: step;
+ 
+ width: inherit;
+ margin:50px auto 50px auto;
+}
+#progress li{
+  list-style-type: none;
+  padding-right:15%;
+  float:left;
+  position: relative;
+}
+#progress li:before{
+  
+ counter-increment: step;
+ content:counter(step);
+ display: block;
+
+ text-align: center;
+ width:30px;
+ height:30px;
+ background:#e4e4e4;
+border-radius: 50%;
+ margin-bottom:7px;
+ line-height: 30px;
+}
+#progress li:after{
+  content:'';
+  height: 2px;
+  background:#e4e4e4;
+  position: absolute;
+  width:100%;
+  top:15px;
+  left:0;
+  z-index: -1;
+}
+#progress li:last-child:after{
+  content:none;
 }
