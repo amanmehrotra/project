@@ -12,18 +12,144 @@
    <link rel="stylesheet" type="text/css" href="css/index_style.css">
 </head>
 <body>
-<script type="text/javascript" src="js/jquery.min.js"></script>
-	<script type="text/javascript" src="js/bootstrap.min.js"></script>
-	<form id="profile_creation">
-	<ul id="progress">
-	 <li>step1</li>
-	 <li>step2</li>
-	 <li>step3</li>
-	 <li>step4</li>
-	 <li>step5</li>
+<div class="container">
+<div class="row">
+<div class="col-md-12 col-sm-12 col-xs-12">
+<ul id="progress">
+	 <li class="active"><span>Personal Details</span></li>
+	 <li><span>Address Details 1</span></li>
+	 <li><span>Address Details 2</span></li>
+	<li><span>Contact Details</span></li>
+	<li><span>Course Details</span></li>
+	<li><span>Occupation Details</span></li>
 	</ul>
+	</div>
+	</div>
+	<div class="row">
+	<div class="col-md-12 col-sm-12 col-xs-12">
+  
+	<form id="profile_creation">
+	
+	<fieldset>
+	<div class="profile_form_head">
+                    <i class="fa fa-file-text-o"></i>
+                    <span>Personal Details</span>
+                   <i class="fa fa-circle-o-notch pull-right"></i>
+                    </div>
+		 <div class="fieldset-input_group">
+		             
+                     <span class="input-addon"><i class="fa fa-pencil-square-o"></i></span>
+                     <input type="text" class="form-control" name="" value="" placeholder="Name" onfocus="this.placeholder=''" onblur="this.placeholder='Name'">
+                     </div>
+                      
+                     <div class="fieldset-input_group">
+                     
+                      <span class="input-addon"><i class="fa fa-pencil-square-o"></i></span>
+                    <!--  <input type="date" class="form-control" name="" value="" placeholder="Date of birth" onfocus="(this.type='date')" onblur="this.placeholder='Date of birth'">    -->
+                    <input placeholder="Date of birth" class="form-control" type="text" onfocus="(this.type='date')"  id="date"> 
+                     </div>
+                     <div class="fieldset-input_group">
+                     <label>Display Birthday:</label>
+                     <label class="switch">
+  					<input type="checkbox" checked>
+  					<div class="slider round"></div>
+					</label>
+                     </div>
+                     <div class="fieldset-input_group">
+                     <label>Gender:</label>
+                   
+                     <label class="radio-inline"><input type="radio" name="optradio">Male</label>
+					 <label class="radio-inline"><input type="radio" name="optradio">Female</label>  
+                     </div>
+                  
+
+                     <div id="button">
+                     <button class=" btn btn-empty next">Next<i class="fa fa-chevron-right"></i></button>
+                     </div>
+                </fieldset>
+
+                <fieldset>
+	<div class="profile_form_head">
+                    <i class="fa fa-file-text-o"></i>
+                    <span>Contact Details</span>
+                   <i class="fa fa-circle-o-notch pull-right"></i>
+                    </div>
+		 <div class="fieldset-input_group">
+		             
+                     <span class="input-addon"><i class="fa fa-pencil-square-o"></i></span>
+                     <input type="email" class="form-control" name="" value="" placeholder="Email Id" onfocus="this.placeholder=''" onblur="this.placeholder='Email Id'">
+                     </div>
+                      <div class="fieldset-input_group">
+                      <span class="input-addon"><i class="fa fa-pencil-square-o"></i></span>
+                     <input type="email" class="form-control" name="" value="" placeholder="Alternate Email Id" onfocus="this.placeholder=''" onblur="this.placeholder='Alternate Email Id'">   
+                     </div>
+                    <div class="fieldset-input_group mobile_input">
+                    
+                      <span class="input-addon"><i>+91</i></span>
+                     <input type="text" class="form-control" name="" value="" placeholder="Mobile number" onfocus="this.placeholder=''" onblur="this.placeholder='Mobile number'" maxlength="15">   
+                     </div>
+                         <div class="fieldset-input_group mobile_input">
+                  
+                          <span class="input-addon"><i>+91</i></span>
+                     <input type="text" class="form-control" name="" value="" placeholder="Alternate Mobile number" onfocus="this.placeholder=''" onblur="this.placeholder='Alternate Mobile number'" maxlength="15">   
+                     </div>
+                     <div class="fieldset-input_group phone_input">
+                   <span class="input-addon"><i class="fa fa-pencil-square-o"></i></span>
+                    <input type="text" class="form-control" id="std-code" name="" value="" placeholder="STD" onfocus="this.placeholder=''" onblur="this.placeholder='STD'" maxlength="6">   
+                     
+                     <input type="text" id="phone-number" class="form-control" name="" value="" placeholder="Phone number" onfocus="this.placeholder=''" onblur="this.placeholder='Phone number'" maxlength="15">   
+                     </div>
+                     <div id="button">
+                     <button class=" btn btn-empty previous"><i class="fa fa-chevron-left"></i>Previous</button>
+                     <button class=" btn btn-empty next">Next<i class="fa fa-chevron-right"></i></button>
+                     </div>
+                </fieldset>
+                <fieldset>
+	<div class="profile_form_head">
+                    <i class="fa fa-file-text-o"></i>
+                    <span>Permanent Address Details</span>
+                   <i class="fa fa-circle-o-notch pull-right"></i>
+                    </div>
+		 <div class="fieldset-input_group">
+		             
+                     <span class="input-addon"><i class="fa fa-pencil-square-o"></i></span>
+                     <input type="text" class="form-control" name="" value="" placeholder="First Name" onfocus="this.placeholder=''" onblur="this.placeholder='First Name'">
+                     </div>
+                      <div class="fieldset-input_group">
+                      <span class="input-addon"><i class="fa fa-pencil-square-o"></i></span>
+                     <input type="text" class="form-control" name="" value="" placeholder="Middle Name" onfocus="this.placeholder=''" onblur="this.placeholder='Middle Name'">   
+                     </div>
+                    <div class="fieldset-input_group">
+                      <span class="input-addon"><i class="fa fa-pencil-square-o"></i></span>
+                     <input type="text" class="form-control" name="" value="" placeholder="Last Name" onfocus="this.placeholder=''" onblur="this.placeholder='Last Name'">   
+                     </div>
+                     <div class="fieldset-input_group">
+                     
+                      <span class="input-addon"><i class="fa fa-pencil-square-o"></i></span>
+                    <!--  <input type="date" class="form-control" name="" value="" placeholder="Date of birth" onfocus="(this.type='date')" onblur="this.placeholder='Date of birth'">    -->
+                    <input placeholder="Date of birth" class="form-control" type="text" onfocus="(this.type='date')"  id="date"> 
+                     </div>
+                     <div class="fieldset-input_group">
+                     <label>Sex:</label>
+                     <label class="radio-inline"><input type="radio" name="optradio">Male</label>
+					 <label class="radio-inline"><input type="radio" name="optradio">Female</label>  
+                     </div>
+                     <div id="button">
+                      
+                     <button class=" btn btn-empty previous"><i class="fa fa-chevron-left"></i>Previous</button>
+                      <button class=" btn btn-empty submit">Submit<i class="fa fa-check"></i></button>
+                     </div>
+                </fieldset>
+	
+	
+	
    </form>
+   </div>
+   </div>
+   </div>
 <!-- Main JS File -->
-<script type="text/javascript" src="js/index_js.js"></script>
+ <script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/profile_creation.js"></script>
 </body>
 </html>

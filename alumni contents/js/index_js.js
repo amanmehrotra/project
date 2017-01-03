@@ -82,6 +82,12 @@ $('div.input_group input').focus(function() {
     $(ele1).css({'display':'none',
                   'transition':'all 0.2s ease-in'});
 });
+
+
+
+
+
+
     
 
 $('#search div.search_div').hover(function(e){
