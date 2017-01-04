@@ -57,7 +57,7 @@ $('div.phone_input input#phone-number').focus(function(){
     $(ele1).css({'display':'none'});
     });
 
-var current_fs,previous_fs,next_fs,animating=false;
+var current_fs,previous_fs,next_fs,animating;
 $('.next').on('click',function(e){
 	e.preventDefault();
 	if(animating) return false;
@@ -67,7 +67,7 @@ $('.next').on('click',function(e){
  next_fs=$(this).parent().parent().next();
  var current_fs_no=$('#progress li').eq($('fieldset').index(current_fs)).index();
 var current_fs_all=$(current_fs).find('*');
- $(current_fs_all).filter(':input').not('button,input[type="radio"]').each(function(){ 
+ $(current_fs_all).filter(':input').not('button').each(function(){ 
  	    /*if($(this).is(':radio')){
  	       if(!($(this).is(':checked')))
  	    		{
@@ -78,16 +78,20 @@ var current_fs_all=$(current_fs).find('*');
  	    			bad--;
 
  	   }*/
+
+ 	   if($(this).is(':radio')){
+ var radio_name=$(current_fs_all).filter('input[type="radio"]').attr('name');
+ if (!$("input[name="+radio_name+"]:checked").val()) {
+       bad++;
+   }
+}
  	    
         if( $.trim($(this).val()) == "") bad++; 
        
                    
     });
- 
- var radio_name=$(current_fs_all).filter('input[type="radio"]').attr('name');
- if (!$("input[name="+radio_name+"]:checked").val()) {
-       bad++;
-   }
+
+  
 
 
 
@@ -138,6 +142,20 @@ setTimeout(function(){
 
 
 });
+
+/* Year pickup for admission and passout year */
+var time=new Date();
+  var year=time.getFullYear();
+  //alert(year);
+  var first_year=year-27;
+  var last_year=year+30;
+  do{
+  var ele=$('<option value="'+first_year+'">'+first_year+'</option>');
+    $('#adm_year').append(ele);
+    var ele1=$('<option value="'+first_year+'">'+first_year+'</option>');
+    $('#pass_year').append(ele1);
+    first_year++;
+  }while(first_year<=last_year);
 
 });
 })();
