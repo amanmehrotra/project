@@ -191,12 +191,12 @@ div.news-events-image{
 	font-family: 'Open Sans Condensed',sans-serif;
 	font-weight: 700;
 } 
-#news_events div.image-text p.second-news-date{
+#news_events div.image-text p.second{
 
 	letter-spacing: 0.03em;
-	font-size: 1.2em;
+	font-size: 1.7em;
 	margin-right:22px;
-	font-family: 'Open Sans Condensed',sans-serif;
+	font-family: 'Roboto',sans-serif;
 	font-weight: 700;
 } 
 #expand-button.btn-danger{
