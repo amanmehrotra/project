@@ -121,9 +121,14 @@ margin-bottom: 20px;
   #news_events ul.nav-tabs > li > a:hover{
   	background: transparent;
   }
-  #news_events div.second-news-content p.second-news-heading{
+  #news_events div.image-text p.second-news-date{
 
-  }
+	letter-spacing: 0.03em;
+	font-size: 1.8em;
+	margin-right:22px;
+	font-family: 'Open Sans Condensed',sans-serif;
+	font-weight: 700;
+} 
 div.news-events-image{
 	
 }
