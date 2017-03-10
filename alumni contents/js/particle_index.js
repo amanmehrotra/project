@@ -14,6 +14,6 @@ particlesJS("particles-js",
 	"events":{"onhover":{"enable":true,"mode":"bubble","resize":false},
 	"onclick":{"enable":true,"mode":"repulse"},"resize":false},
 	"modes":{"grab":{"distance":400,"line_linked":{"opacity":0.1}},
-	"bubble":{"distance":400,"size":4,"duration":0.3,"opacity":1,"speed":3},
+	"bubble":{"distance":400,"size":3,"duration":0.3,"opacity":0.8,"speed":3},
 	"repulse":{"distance":200,"duration":0.4},"push":{"particles_nb":4},
 	"remove":{"particles_nb":2}}},"retina_detect":true});
