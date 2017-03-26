@@ -684,3 +684,114 @@ div.btn-group ul.dropdown-menu{
 		display: none;
 	}
 }
+
+/***************************
+   Document repository
+***************************/
+table thead{
+	font-family:'Roboto',sans-serif;
+	font-size:12px;
+	font-weight: 700;
+	
+}
+th{
+	text-align: center!important;
+}
+table tbody{
+	font-size:12px;
+	color:#000;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 400;
+	text-align: center;
+	letter-spacing: 0.02em;
+
+
+}
+.table-condensed>tbody>tr>td:first-child{
+font-family: 'Open Sans Condensed', sans-serif;
+	font-weight: 700;
+	color:#333;
+	
+}
+.table-condensed>tbody>tr>td:first-child>i{
+	color:#ff8f00;
+	margin-right: 10px;
+	font-weight: bold;
+}
+.table-condensed>tbody>tr>td, .table-condensed>thead>tr>th{
+	padding:6px!important;
+}
+.pagination li{
+margin:0 5px;
+
+}
+.pagination li a{
+	float:none;
+	color:#333;
+	font-weight: 400;
+
+}
+.pagination>.active>a{
+	background-color: #ff8f00;
+	border-color: #f27935;
+	border-radius: 5px;
+}
+.pagination>.active>a:hover{
+	background-color: #f27935;
+	border-color: #f27935;
+}
+.dropdown{
+	margin-bottom: 10px;
+}
+.dropdown-menu{
+	position: absolute;
+	left:150px;
+	top:25px;
+	padding-left:10px;
+}
+.dropdown span.heading{
+	margin-right: 20px;
+	font-size: 25px;
+	font-style: 'Roboto',sans-serif;
+	font-weight: 700;
+}
+.dropdown i{
+	color:#ff8f00;
+	font-size: 25px;
+}
+.dropdown button.filter{
+	background-color: transparent;
+	border:none;
+}
+.dropdown button.active{
+	background-color: #333;
+}
+.dropdown li input{
+	margin-right:7px;
+}
+.dropdown li input[type='radio'] {
+    -webkit-appearance:none;
+    width:15px;
+    height:15px;
+    border:1px solid darkgray;
+    border-radius:50%;
+    outline:none;
+   
+}
+.dropdown li input[type='radio']:hover {
+    box-shadow:0 0 5px 0px orange inset;
+}
+.dropdown li input[type='radio']:before {
+    content:'';
+    display:block;
+    width:60%;
+    height:60%;
+    margin: 20% auto;    
+    border-radius:50%;    
+}
+.dropdown li input[type='radio']:checked:before {
+    background:#ff8f00;
+}
+.dropdown-menu .divider{
+	margin-right: 10px;
+}
