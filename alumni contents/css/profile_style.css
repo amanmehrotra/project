@@ -93,6 +93,30 @@ font-weight: 400;
 #topnav .navbar-nav > li.open > a {
   background-color: none;
 }
+
+#logo{
+  z-index:0!important;
+}
+#logo > a {
+  font-size:22px;
+  margin-left:30px;
+padding: 0;
+color: #999999;
+ font-family: 'Roboto', sans-serif;
+  line-height: 47px;
+ letter-spacing: 0.05em;
+ font-weight: 700;
+ text-transform: uppercase;
+
+}
+
+#logo >a > p{
+color:#fff;
+position: absolute;
+top:40px;
+margin-left:40px;
+opacity:1;
+}
 body{
       background: url(../img/background.gif) 0px 0px repeat;
 }
@@ -110,6 +134,9 @@ body{
 #profile .container .row{
   margin-bottom: 20px;
   
+}
+#profile .container .row:last-child{
+  margin-bottom: 90px;
 }
 #profile .overlay-container{
   display: inline-block;
@@ -410,6 +437,30 @@ ul.info-list li span{
   font-weight: 400;
   letter-spacing: 0.02em;
 }
+.footer{
+font-family: 'Open Sans', sans-serif;
+ text-align: center;
+  position:fixed;
+  bottom:0;
+  width:100%;
+  background-color: #222;
+  height:50px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.footer span{
+   display: block;
+   font-size: 12px;
+}
+.footer p{
+   font-size: 12px;
+   display: block;
+
+}
+.footer p span{
+  display: inline-block;
+  color:#008CBA;
+}
 /* ------------------------------------------------------------- */
 /* General styles */
 /* ------------------------------------------------------------- */
@@ -560,29 +611,6 @@ button.form-control i{
  
 }
 
-#logo{
-  z-index:0!important;
-}
-#logo > a {
-  font-size:25px;
-  margin-left:30px;
-padding: 0;
-color: #999999;
- font-family: 'Roboto', sans-serif;
-  line-height: 47px;
- letter-spacing: 0.05em;
- font-weight: 700;
- text-transform: uppercase;
-
-}
-
-#logo >a > p{
-color:#fff;
-position: absolute;
-top:40px;
-margin-left:40px;
-opacity:1;
-}
 .banner > .container{
  top:39%;
  position: relative;
