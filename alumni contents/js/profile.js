@@ -4,9 +4,13 @@
 	$(document).ready(function(){
 		// When the user clicks on the button, open the modal 
 $('#profile .overlay-container').on('click',function(){
-    $('.modal').show("1000");
+    $('#myModal').show("1000");
 });
 
+$('#login-button').on('click',function(e){
+	e.preventDefault();
+    $('#login-form').show("1000");
+});
 
 // When the user clicks on <span> (x), close the modal
 $('.modal-content span.close').on('click',function(){
