@@ -24,12 +24,21 @@ $(document).ready(function(){
       interval: false
     });
 
+   $(document).bind('keyup', function(e) {
+        if(e.which == 40){
+            $('.carousel').carousel('next');
+        }
+        else if(e.which == 38){
+            $('.carousel').carousel('prev');
+        }
+    });
+
 // scroll slides on mouse scroll 
 $('#myCarousel').bind('mousewheel DOMMouseScroll', function(e){
 
         if(e.originalEvent.wheelDelta > 0 || e.originalEvent.detail < 0) {
             $(this).carousel('prev');
-      
+           
         }
         else{
             $(this).carousel('next');

@@ -331,8 +331,8 @@ border:none;
 
 .carousel-inner> .item.next ,  .carousel-inner > .item.active.right{ transform: translate3d(0, 100%, 0); -webkit-transform: translate3d(0, 100%, 0); -ms-transform: translate3d(0, 100%, 0); -moz-transform: translate3d(0, 100%, 0); -o-transform: translate3d(0, 100%, 0);  top: 0;}
 .carousel-inner > .item.prev ,.carousel-inner > .item.active.left{ transform: translate3d(0,0, 0); -webkit-transform: translate3d(0,0, 0);  -moz-transform: translate3d(0,0, 0);-ms-transform: translate3d(0,0, 0); -o-transform: translate3d(0,0, 0); top: 0;}
-.carousel-inner > .item.next.left , .carousel-inner > .item.prev.right , .carousel-inner > .item.active{transform:translate3d(0,0,0); -webkit-transform:translate3d(0,0,0);-ms-transform:translate3d(0,0,0);; -moz-transform:translate3d(0,0,0); -o-transform:translate3d(0,0,0); top:0;}
-
+.carousel-inner > .item.active.left{ transform: translate3d(0,0, 0); -webkit-transform: translate3d(0,-100%, 0);  -moz-transform: translate3d(0,0, 0);-ms-transform: translate3d(0,0, 0); -o-transform: translate3d(0,0, 0); top: 0;}
+.carousel-inner > .item.prev{ transform: translate3d(0, 100%, 0); -webkit-transform: translate3d(0, -100%, 0); -ms-transform: translate3d(0, 100%, 0); -moz-transform: translate3d(0, 100%, 0); -o-transform: translate3d(0, 100%, 0);  top: 0;}
 /*------------------------------- vertical carousel indicators ------------------------------*/
 .carousel-indicators{
 position:absolute;
